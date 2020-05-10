@@ -6,3 +6,6 @@
 # @File    : lesson2_01.py
 # @Function:
 # @Software: PyCharm
+
+import requests
+import webbrowser
