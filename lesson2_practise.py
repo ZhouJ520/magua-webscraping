@@ -3,7 +3,7 @@
 # @Time    : 2020/5/11 19:11
 # @Author  : Ian_Zhou
 # @Email   : zhoujian_2008@msn.com
-# @File    : lesson2_practise.py
+# @File    : lesson2_practise_private.py
 # @Function:
 # @Software: PyCharm
 
