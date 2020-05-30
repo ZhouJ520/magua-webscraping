@@ -18,10 +18,9 @@ def start_chrome():
     return driver
 
 
-def find_info(url):
+def find_info(driver, url):
     # css selector
     sel = 'div.card-topic-a:nth-child(3) > div:nth-child(2) > div:nth-child(2) > span:nth-child(2)'
-    driver = start_chrome()
     driver.get(url)
     time.sleep(10)
     elems = driver.find_element_by_css_selector(sel)
@@ -31,7 +30,8 @@ def find_info(url):
 def main():
     while True:
         url = 'https://s.weibo.com/weibo/%2523%25E5%25A5%25A5%25E6%2596%25AF%25E5%258D%25A1%2523&Refer=STopic_box'
-        info = find_info(url)
+        driver = start_chrome()
+        info = find_info(driver, url)
         if info> '300万':
             print(f'讨论数量已经为{info}')
             break
